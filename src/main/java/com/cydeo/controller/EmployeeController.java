@@ -35,7 +35,7 @@ public class EmployeeController {
     @PostMapping("/insert")
     public String insertEmployee(@ModelAttribute("employee") Employee employee) {
         employeeService.saveemployee(employee);
-        return "redirect:employee/list";  //With redirect we are using endpoints
+        return "redirect:/employee/list";  //With redirect we are using endpoints
     }
 
     @GetMapping("/list")
